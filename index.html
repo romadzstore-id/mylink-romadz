@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romadz Store ID - Linktree</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/5vidyd.jpg">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-container">
+            <div class="pixel-loader">
+                <div class="pixel-block"></div>
+                <div class="pixel-block"></div>
+                <div class="pixel-block"></div>
+                <div class="pixel-block"></div>
+            </div>
+            <p class="loading-text">MEMUAT...</p>
+        </div>
+    </div>
+
+    <!-- Custom Notification Toast -->
+    <div class="toast" id="toast">
+        <span id="toastMessage">Link telah disalin!</span>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container" id="mainContent">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="profile-card">
+                <div class="profile-image-container">
+                    <img src="https://files.catbox.moe/5vidyd.jpg" alt="Romadz Store ID Logo" class="profile-image">
+                    <div class="image-border"></div>
+                </div>
+                <h1 class="brand-title">ROMADZ STORE ID</h1>
+                <p class="brand-description">Platform terpercaya untuk kebutuhan digital Anda</p>
+                <div class="divider"></div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Platform Links Section -->
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-link"></i> PLATFORM RESMI
+                </h2>
+                <div class="links-grid">
+                    <a href="https://wa.me/6283171889474" class="link-card" target="_blank" data-platform="WhatsApp">
+                        <div class="link-icon whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="link-info">
+                            <h3>WhatsApp</h3>
+                            <p>Hubungi kami via WhatsApp</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/rmddz" class="link-card" target="_blank" data-platform="Telegram">
+                        <div class="link-icon telegram">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <div class="link-info">
+                            <h3>Telegram</h3>
+                            <p>Channel Telegram Official</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/rmddztrust" class="link-card" target="_blank" data-platform="Testimoni">
+                        <div class="link-icon testimoni">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="link-info">
+                            <h3>Testimoni</h3>
+                            <p>Lihat testimoni pelanggan</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Marketplace Groups Section -->
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-store"></i> GRUP MARKETPLACE
+                </h2>
+                <div class="links-grid">
+                    <a href="https://chat.whatsapp.com/DMlW3e4CdZ71ICRQA2HZ4n" class="link-card" target="_blank" data-platform="Marketplace 1">
+                        <div class="link-icon marketplace">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="link-info">
+                            <h3>Marketplace 1</h3>
+                            <p>Grup diskusi produk pertama</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://chat.whatsapp.com/JsDqyCZDHnxIJi8ciU0GPF" class="link-card" target="_blank" data-platform="Marketplace 2">
+                        <div class="link-icon marketplace">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="link-info">
+                            <h3>Marketplace 2</h3>
+                            <p>Grup diskusi produk kedua</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://chat.whatsapp.com/CvAQThReFiLFO2IcBH8X7m" class="link-card" target="_blank" data-platform="Marketplace 3">
+                        <div class="link-icon marketplace">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <div class="link-info">
+                            <h3>Marketplace 3</h3>
+                            <p>Grup diskusi produk ketiga</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://chat.whatsapp.com/JohNc0ty7RYKuAGPNOuYuU" class="link-card" target="_blank" data-platform="Marketplace 4">
+                        <div class="link-icon marketplace">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="link-info">
+                            <h3>Marketplace 4</h3>
+                            <p>Grup diskusi produk keempat</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://chat.whatsapp.com/HHQu02C1ZRX4eQFE7rkjpd" class="link-card" target="_blank" data-platform="Marketplace 5">
+                        <div class="link-icon marketplace">
+                            <i class="fas fa-store-alt"></i>
+                        </div>
+                        <div class="link-info">
+                            <h3>Marketplace 5</h3>
+                            <p>Grup diskusi produk kelima</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Information Group Section -->
+            <section class="section">
+                <h2 class="section-title">
+                    <i class="fas fa-info-circle"></i> GRUP INFORMASI
+                </h2>
+                <div class="links-grid">
+                    <a href="https://chat.whatsapp.com/EtVz7hjYiE8DJvIMIgfzGP" class="link-card" target="_blank" data-platform="Informasi">
+                        <div class="link-icon informasi">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="link-info">
+                            <h3>Informasi</h3>
+                            <p>Grup informasi resmi terbaru</p>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-external-link-alt"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Stats Section -->
+            <section class="stats-section">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>10K+</h3>
+                        <p>Anggota Grup</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>4.9/5</h3>
+                        <p>Rating Pelanggan</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>100%</h3>
+                        <p>Transaksi Aman</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="copyright">© 2026 - Romadz Store ID</p>
+                <div class="footer-links">
+                    <a href="https://wa.me/6283171889474" class="footer-link" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://t.me/rmddz" class="footer-link" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="mailto:contact@romadzstore.id" class="footer-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
