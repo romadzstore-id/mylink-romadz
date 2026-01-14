@@ -250,11 +250,11 @@ body {
 
 /* Marketplace Section */
 .marketplace-1-card {
-    box-shadow: 6px 6px 0 #7c5ac2; /* Ungu pastel */
+    box-shadow: 6px 6px 0 #5a9bd4; /* Ungu pastel */
 }
 
 .marketplace-1-card .link-icon {
-    background-color: #7c5ac2;
+    background-color: #5a9bd4;
 }
 
 .marketplace-2-card {
@@ -266,36 +266,36 @@ body {
 }
 
 .marketplace-3-card {
-    box-shadow: 6px 6px 0 #7bc8a4; /* Hijau pastel */
+    box-shadow: 6px 6px 0 #5a9bd4; /* Hijau pastel */
 }
 
 .marketplace-3-card .link-icon {
-    background-color: #7bc8a4;
+    background-color: #5a9bd4;
 }
 
 .marketplace-4-card {
-    box-shadow: 6px 6px 0 #d47c9b; /* Pink pastel */
+    box-shadow: 6px 6px 0 #5a9bd4; /* Pink pastel */
 }
 
 .marketplace-4-card .link-icon {
-    background-color: #d47c9b;
+    background-color: #5a9bd4;
 }
 
 .marketplace-5-card {
-    box-shadow: 6px 6px 0 #9b7cd4; /* Ungu lavender */
+    box-shadow: 6px 6px 0 #5a9bd4; /* Ungu lavender */
 }
 
 .marketplace-5-card .link-icon {
-    background-color: #9b7cd4;
+    background-color: #5a9bd4;
 }
 
 /* Informasi Section */
 .informasi-card {
-    box-shadow: 6px 6px 0 #a6a6a6; /* Abu muda */
+    box-shadow: 6px 6px 0 #25D366; /* Abu muda */
 }
 
 .informasi-card .link-icon {
-    background-color: #a6a6a6;
+    background-color: #25D366;
 }
 
 /* Hover Effects for Cards */
