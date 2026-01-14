@@ -1,0 +1,473 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f3f0; /* Off-white / putih tulang */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Loading Animation - REVISI: 5 detik */
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f3f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loading-pixel {
+    width: 16px;
+    height: 16px;
+    background-color: #7c5ac2; /* Ungu pastel */
+    margin: 0 8px;
+    border: 2px solid #333;
+    animation: loading-bounce 4.8s infinite ease-in-out both;
+    border-radius: 2px;
+}
+
+.loading-pixel:nth-child(1) {
+    background-color: #7c5ac2; /* Ungu */
+    animation-delay: -0.96s;
+}
+
+.loading-pixel:nth-child(2) {
+    background-color: #25D366; /* Hijau WhatsApp */
+    animation-delay: -0.72s;
+}
+
+.loading-pixel:nth-child(3) {
+    background-color: #0088cc; /* Biru Telegram */
+    animation-delay: -0.48s;
+}
+
+.loading-pixel:nth-child(4) {
+    background-color: #FFB347; /* Oranye pastel */
+    animation-delay: -0.24s;
+}
+
+.loading-pixel:nth-child(5) {
+    background-color: #5a9bd4; /* Biru pastel */
+    animation-delay: 0s;
+}
+
+@keyframes loading-bounce {
+    0%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    10%, 90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    20%, 80% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    30%, 70% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    40%, 60% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(124, 90, 194, 0.5);
+    }
+}
+
+/* Toast Notification */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background-color: #333;
+    color: #fff;
+    padding: 12px 20px;
+    border: 2px solid #000;
+    box-shadow: 4px 4px 0 #7c5ac2;
+    font-weight: 600;
+    z-index: 1000;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    width: 140px;
+    height: 140px;
+    border: 4px solid #000;
+    margin: 0 auto 25px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 6px 6px 0 #a6a6a6; /* Abu muda */
+    border-radius: 0; /* Sudut tegas */
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.brand-name {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: #333;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+}
+
+.brand-description {
+    font-size: 1.05rem;
+    color: #666;
+    font-weight: 500;
+    max-width: 300px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Main Content */
+.main-content {
+    margin-bottom: 40px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #000;
+    text-align: center;
+}
+
+/* Links Grid */
+.links-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 35px;
+}
+
+/* Link Cards Base Style */
+.link-card {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 3px solid #000;
+    padding: 18px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.link-card:hover {
+    transform: translate(3px, 3px);
+}
+
+.link-card:active {
+    transform: translate(5px, 5px);
+}
+
+.link-icon {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    flex-shrink: 0;
+}
+
+.link-icon i {
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.link-info {
+    flex-grow: 1;
+}
+
+.link-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.link-desc {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.link-arrow {
+    font-size: 1.3rem;
+    color: #333;
+    margin-left: 10px;
+}
+
+/* Card Color Variations - REVISI: Pewarnaan lebih konsisten */
+/* Hubungi Kami Section */
+.whatsapp-card {
+    box-shadow: 6px 6px 0 #25D366; /* Hijau WhatsApp */
+}
+
+.whatsapp-card .link-icon {
+    background-color: #25D366;
+}
+
+.telegram-card {
+    box-shadow: 6px 6px 0 #0088cc; /* Biru Telegram */
+}
+
+.telegram-card .link-icon {
+    background-color: #0088cc;
+}
+
+.testimoni-card {
+    box-shadow: 6px 6px 0 #FFB347; /* Oranye pastel */
+}
+
+.testimoni-card .link-icon {
+    background-color: #FFB347;
+}
+
+/* Marketplace Section */
+.marketplace-1-card {
+    box-shadow: 6px 6px 0 #7c5ac2; /* Ungu pastel - Tokopedia */
+}
+
+.marketplace-1-card .link-icon {
+    background-color: #7c5ac2;
+}
+
+.marketplace-2-card {
+    box-shadow: 6px 6px 0 #5a9bd4; /* Biru pastel - Shopee */
+}
+
+.marketplace-2-card .link-icon {
+    background-color: #5a9bd4;
+}
+
+.marketplace-3-card {
+    box-shadow: 6px 6px 0 #7bc8a4; /* Hijau pastel - Instagram */
+}
+
+.marketplace-3-card .link-icon {
+    background-color: #7bc8a4;
+}
+
+.marketplace-4-card {
+    box-shadow: 6px 6px 0 #d47c9b; /* Pink pastel - TikTok */
+}
+
+.marketplace-4-card .link-icon {
+    background-color: #d47c9b;
+}
+
+.marketplace-5-card {
+    box-shadow: 6px 6px 0 #9b7cd4; /* Ungu lavender - Facebook */
+}
+
+.marketplace-5-card .link-icon {
+    background-color: #9b7cd4;
+}
+
+/* Informasi Section */
+.informasi-card {
+    box-shadow: 6px 6px 0 #a6a6a6; /* Abu muda */
+}
+
+.informasi-card .link-icon {
+    background-color: #a6a6a6;
+}
+
+/* Hover Effects for Cards */
+.link-card:hover {
+    box-shadow: 3px 3px 0;
+}
+
+.whatsapp-card:hover {
+    box-shadow: 3px 3px 0 #25D366;
+}
+
+.telegram-card:hover {
+    box-shadow: 3px 3px 0 #0088cc;
+}
+
+.testimoni-card:hover {
+    box-shadow: 3px 3px 0 #FFB347;
+}
+
+.marketplace-1-card:hover {
+    box-shadow: 3px 3px 0 #7c5ac2;
+}
+
+.marketplace-2-card:hover {
+    box-shadow: 3px 3px 0 #5a9bd4;
+}
+
+.marketplace-3-card:hover {
+    box-shadow: 3px 3px 0 #7bc8a4;
+}
+
+.marketplace-4-card:hover {
+    box-shadow: 3px 3px 0 #d47c9b;
+}
+
+.marketplace-5-card:hover {
+    box-shadow: 3px 3px 0 #9b7cd4;
+}
+
+.informasi-card:hover {
+    box-shadow: 3px 3px 0 #a6a6a6;
+}
+
+/* Active Effects for Cards */
+.link-card:active {
+    box-shadow: 0px 0px 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 3px solid #000;
+    margin-top: 20px;
+}
+
+.copyright {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.footer-note {
+    font-size: 0.85rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        padding: 25px;
+        margin: 25px auto;
+    }
+    
+    .brand-name {
+        font-size: 2.8rem;
+    }
+    
+    .brand-description {
+        font-size: 1.1rem;
+        max-width: 400px;
+    }
+    
+    .links-grid {
+        gap: 18px;
+    }
+    
+    .link-card {
+        padding: 20px;
+    }
+    
+    .logo-container {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 480px) {
+    body {
+        padding: 15px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .logo-container {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 20px;
+    }
+    
+    .brand-name {
+        font-size: 2rem;
+    }
+    
+    .brand-description {
+        font-size: 0.95rem;
+    }
+    
+    .link-card {
+        padding: 15px;
+    }
+    
+    .link-icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+    }
+    
+    .link-title {
+        font-size: 1.1rem;
+    }
+    
+    .link-desc {
+        font-size: 0.85rem;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+}
