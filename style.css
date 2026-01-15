@@ -222,11 +222,13 @@ body {
     align-items: center;
     margin-right: 18px;
     flex-shrink: 0;
+    transition: background-color 0.1s ease;
 }
 
 .link-icon i {
     font-size: 1.4rem;
     color: #fff;
+    transition: color 0.1s ease;
 }
 
 .link-info {
@@ -250,6 +252,7 @@ body {
     font-size: 1.3rem;
     color: #333;
     margin-left: 10px;
+    transition: color 0.1s ease;
 }
 
 /* Card Color Variations - REVISI: Pewarnaan lebih konsisten */
@@ -369,9 +372,30 @@ body {
     box-shadow: 3px 3px 0 #a6a6a6;
 }
 
-/* Active Effects for Cards */
+/* Active Effects for Cards - REVISI: Saat di-klik berubah jadi ungu */
 .link-card:active {
-    box-shadow: 0px 0px 0;
+    box-shadow: 0px 0px 0 #7c5ac2 !important;
+}
+
+.link-card:active .link-icon {
+    background-color: #7c5ac2 !important;
+}
+
+.link-card:active .link-icon i {
+    color: #fff !important;
+}
+
+.link-card:active .link-arrow {
+    color: #7c5ac2 !important;
+}
+
+/* Pastikan efek hover tidak mengganggu efek klik */
+.link-card:active:hover {
+    box-shadow: 0px 0px 0 #7c5ac2 !important;
+}
+
+.link-card:active:hover .link-icon {
+    background-color: #7c5ac2 !important;
 }
 
 /* Footer */
