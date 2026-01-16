@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RomadzStore - All Sosmed Links</title>
+    <title>All Links Sosmed - Romadz Store ID</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,181 +11,154 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Loading Animation -->
-    <div id="loading">
-        <div class="loading-pixel"></div>
-        <div class="loading-pixel"></div>
-        <div class="loading-pixel"></div>
-    </div>
-
-    <!-- Notification Toast -->
-    <div id="toast" class="toast">
-        <span id="toast-text">Link berhasil disalin!</span>
-    </div>
-
-    <!-- Main Container -->
     <div class="container">
-        <!-- Header Section -->
+        <!-- Header dengan logo dan nama brand -->
         <header class="header">
             <div class="logo-container">
-                <img src="https://files.catbox.moe/5vidyd.jpg" 
-                     alt="Logo Brand" class="logo" id="logo-img">
+                <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Logo RMDDZ" class="logo" id="logo">
             </div>
             <h1 class="brand-name">Romadz Store</h1>
-            <p class="brand-description"> </p>
+            <p class="description">Professional Digital Solutions & Services</p>
         </header>
 
-        <!-- Main Content -->
+        <!-- Loading animation (akan hilang setelah semua konten dimuat) -->
+        <div class="loading-overlay" id="loadingOverlay">
+            <div class="loading-pixel"></div>
+            <div class="loading-text">LOADING...</div>
+        </div>
+
+        <!-- Toast notification (tersembunyi secara default) -->
+        <div class="toast" id="toast">
+            <div class="toast-content">
+                <span class="toast-icon">✓</span>
+                <span class="toast-text">Link berhasil disalin!</span>
+            </div>
+        </div>
+
+        <!-- Bagian utama dengan semua link -->
         <main class="main-content">
-            <!-- Links Section -->
-            <section class="links-section">
-                <h2 class="section-title">Hubungi Kami</h2>
-                <div class="links-grid">
-                    <!-- WhatsApp Card -->
-                    <div class="link-card whatsapp-card" data-url="https://wa.me/6283171889474">
+            <!-- Section Link Utama -->
+            <section class="link-section">
+                <h2 class="section-title">LINK UTAMA</h2>
+                <div class="links-container">
+                    <a href="https://wa.me/6283171889474" class="link-card" target="_blank" data-link-type="whatsapp">
                         <div class="link-icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
-                        <div class="link-info">
+                        <div class="link-text">
                             <h3 class="link-title">WhatsApp</h3>
-                            <p class="link-desc">Hubungi kami via WhatsApp</p>
+                            <p class="link-subtitle">Hubungi langsung via WhatsApp</p>
                         </div>
-                        <div class="link-arrow">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
+                        <div class="link-arrow">→</div>
+                    </a>
 
-                    <!-- Telegram Card -->
-                    <div class="link-card telegram-card" data-url="https://t.me/rmddz">
+                    <a href="https://t.me/rmddz" class="link-card" target="_blank" data-link-type="telegram">
                         <div class="link-icon">
                             <i class="fab fa-telegram"></i>
                         </div>
-                        <div class="link-info">
+                        <div class="link-text">
                             <h3 class="link-title">Telegram</h3>
-                            <p class="link-desc">Hubungi kami via Telegram</p>
+                            <p class="link-subtitle">Kontak Telegram pribadi</p>
                         </div>
-                        <div class="link-arrow">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
+                        <div class="link-arrow">→</div>
+                    </a>
 
-                    <!-- Testimoni Card -->
-                    <div class="link-card testimoni-card" data-url="https://t.me/rmddztrust">
+                    <a href="https://t.me/rmddztrust" class="link-card" target="_blank" data-link-type="testimoni">
                         <div class="link-icon">
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="link-info">
+                        <div class="link-text">
                             <h3 class="link-title">Testimoni</h3>
-                            <p class="link-desc">Lihat testimoni pelanggan kami</p>
+                            <p class="link-subtitle">Lihat testimoni pelanggan</p>
                         </div>
-                        <div class="link-arrow">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
+                        <div class="link-arrow">→</div>
+                    </a>
                 </div>
             </section>
 
-            <!-- Marketplace Section -->
-            <section class="links-section">
-                <h2 class="section-title">Group Marketplace</h2>
-                <div class="links-grid">
-                    <!-- Marketplace 1 -->
-                    <div class="link-card marketplace-1-card" data-url="https://chat.whatsapp.com/DMlW3e4CdZ71ICRQA2HZ4n">
+            <!-- Section Group Marketplace -->
+            <section class="link-section">
+                <h2 class="section-title">GROUP MARKETPLACE</h2>
+                <div class="links-container">
+                    <a href="https://chat.whatsapp.com/DMlW3e4CdZ71ICRQA2HZ4n" class="link-card" target="_blank" data-link-type="marketplace">
                         <div class="link-icon">
                             <i class="fas fa-store"></i>
                         </div>
-                        <div class="link-info">
+                        <div class="link-text">
                             <h3 class="link-title">Marketplace 1</h3>
-                            <p class="link-desc">Grup WhatsApp (Bebas Promosi)</p>
+                            <p class="link-subtitle">Grup WhatsApp Marketplace Utama</p>
                         </div>
-                        <div class="link-arrow">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
+                        <div class="link-arrow">→</div>
+                    </a>
 
-                    <!-- Marketplace 2 -->
-                    <div class="link-card marketplace-2-card" data-url="https://chat.whatsapp.com/JsDqyCZDHnxIJi8ciU0GPF">
+                    <a href="https://chat.whatsapp.com/JsDqyCZDHnxIJi8ciU0GPF" class="link-card" target="_blank" data-link-type="marketplace">
                         <div class="link-icon">
                             <i class="fas fa-store"></i>
                         </div>
-                        <div class="link-info">
+                        <div class="link-text">
                             <h3 class="link-title">Marketplace 2</h3>
-                            <p class="link-desc">Grup WhatsApp (Bebas Promosi)</p>
+                            <p class="link-subtitle">Grup WhatsApp Marketplace Alternatif</p>
                         </div>
-                        <div class="link-arrow">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
+                        <div class="link-arrow">→</div>
+                    </a>
 
-                    <!-- Marketplace 3 -->
-                    <div class="link-card marketplace-3-card" data-url="https://chat.whatsapp.com/CvAQThReFiLFO2IcBH8X7m">
+                    <a href="https://chat.whatsapp.com/CvAQThReFiLFO2IcBH8X7m" class="link-card" target="_blank" data-link-type="marketplace">
                         <div class="link-icon">
                             <i class="fas fa-store"></i>
                         </div>
-                        <div class="link-info">
+                        <div class="link-text">
                             <h3 class="link-title">Marketplace 3</h3>
-                            <p class="link-desc">Grup WhatsApp (Bebas Promosi)</p>
+                            <p class="link-subtitle">Grup WhatsApp Marketplace Tambahan</p>
                         </div>
-                        <div class="link-arrow">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
+                        <div class="link-arrow">→</div>
+                    </a>
 
-                    <!-- Marketplace 4 -->
-                    <div class="link-card marketplace-4-card" data-url="https://chat.whatsapp.com/JohNc0ty7RYKuAGPNOuYuU">
+                    <a href="https://chat.whatsapp.com/JohNc0ty7RYKuAGPNOuYuU" class="link-card" target="_blank" data-link-type="marketplace">
                         <div class="link-icon">
                             <i class="fas fa-store"></i>
                         </div>
-                        <div class="link-info">
+                        <div class="link-text">
                             <h3 class="link-title">Marketplace 4</h3>
-                            <p class="link-desc">Grup WhatsApp (Bebas Promosi)</p>
+                            <p class="link-subtitle">Grup WhatsApp Marketplace Premium</p>
                         </div>
-                        <div class="link-arrow">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
+                        <div class="link-arrow">→</div>
+                    </a>
 
-                    <!-- Marketplace 5 -->
-                    <div class="link-card marketplace-5-card" data-url="https://chat.whatsapp.com/HHQu02C1ZRX4eQFE7rkjpd">
+                    <a href="https://chat.whatsapp.com/HHQu02C1ZRX4eQFE7rkjpd" class="link-card" target="_blank" data-link-type="marketplace">
                         <div class="link-icon">
                             <i class="fas fa-store"></i>
                         </div>
-                        <div class="link-info">
+                        <div class="link-text">
                             <h3 class="link-title">Marketplace 5</h3>
-                            <p class="link-desc">Grup WhatsApp (Bebas Promosi)</p>
+                            <p class="link-subtitle">Grup WhatsApp Marketplace Eksklusif</p>
                         </div>
-                        <div class="link-arrow">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
+                        <div class="link-arrow">→</div>
+                    </a>
                 </div>
             </section>
 
-            <!-- Informasi Section -->
-            <section class="links-section">
-                <h2 class="section-title">Group Informasi</h2>
-                <div class="links-grid">
-                    <!-- Informasi -->
-                    <div class="link-card informasi-card" data-url="https://chat.whatsapp.com/EtVz7hjYiE8DJvIMIgfzGP">
+            <!-- Section Group Informasi -->
+            <section class="link-section">
+                <h2 class="section-title">GROUP INFORMASI</h2>
+                <div class="links-container">
+                    <a href="https://chat.whatsapp.com/EtVz7hjYiE8DJvIMIgfzGP" class="link-card" target="_blank" data-link-type="informasi">
                         <div class="link-icon">
                             <i class="fas fa-info-circle"></i>
                         </div>
-                        <div class="link-info">
+                        <div class="link-text">
                             <h3 class="link-title">Informasi</h3>
-                            <p class="link-desc">Grup WhatsApp (Khusus Infomasi)</p>
+                            <p class="link-subtitle">Grup informasi dan update terbaru</p>
                         </div>
-                        <div class="link-arrow">
-                            <i class="fas fa-external-link-alt"></i>
-                        </div>
-                    </div>
+                        <div class="link-arrow">→</div>
+                    </a>
                 </div>
             </section>
         </main>
 
         <!-- Footer -->
         <footer class="footer">
-            <p class="copyright"> </p>
-            <p class="footer-note">© 2026 Romadz Store ID. All rights reserved.</p>
+            <p class="footer-text">© 2026 Romadz Store ID. All rights reserved.</p>
+            <p class="footer-subtext">Professional Digital Solutions</p>
         </footer>
     </div>
 
