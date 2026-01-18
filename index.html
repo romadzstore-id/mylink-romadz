@@ -3,163 +3,337 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linktree Pixel - Romadz Store</title>
+    <title>ROMADZ STORE - Solusi Digital & Hosting Terpercaya</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/5vidyd.jpg">
 </head>
 <body>
-    <div class="container">
-        <!-- Header dengan logo dan nama brand -->
-        <header class="header">
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="nav-container">
             <div class="logo-container">
-                <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Logo Romadz Store" class="logo" id="logo">
+                <img src="https://files.catbox.moe/5vidyd.jpg" alt="ROMADZ STORE Logo" class="logo">
+                <span class="logo-text">ROMADZ STORE</span>
             </div>
-            <h1 class="brand-name">Romadz Store</h1>
-            <p class="description">Professional Digital Solutions & Services</p>
-        </header>
-
-        <!-- Loading animation (akan hilang setelah semua konten dimuat) -->
-        <div class="loading-overlay" id="loadingOverlay">
-            <div class="loading-pixel"></div>
-            <div class="loading-text">LOADING...</div>
-        </div>
-
-        <!-- Toast notification (tersembunyi secara default) -->
-        <div class="toast" id="toast">
-            <div class="toast-content">
-                <span class="toast-icon">✓</span>
-                <span class="toast-text">Link berhasil disalin!</span>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Beranda</a></li>
+                <li><a href="#services" class="nav-link">Layanan</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
+    </nav>
 
-        <!-- Bagian utama dengan semua link -->
-        <main class="main-content">
-            <!-- Section Link Utama -->
-            <section class="link-section">
-                <h2 class="section-title">LINK UTAMA</h2>
-                <div class="links-container">
-                    <a href="https://wa.me/6283171889474" class="link-card" target="_blank" data-link-type="whatsapp">
-                        <div class="link-icon">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-logo-container">
+                <img src="https://files.catbox.moe/5vidyd.jpg" alt="ROMADZ STORE Logo" class="hero-logo">
+            </div>
+            <h1 class="hero-title">ROMADZ STORE</h1>
+            <h2 class="hero-subtitle">Solusi Digital & Hosting Terpercaya</h2>
+            <div class="hero-bio">
+                <div class="bio-item">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Berdiri sejak 2024 – Sekarang</span>
+                </div>
+                <div class="bio-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Kabupaten Rembang, Jawa Tengah, Indonesia</span>
+                </div>
+            </div>
+            <a href="#services" class="hero-btn">
+                Lihat Layanan
+                <i class="fas fa-arrow-down"></i>
+            </a>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Layanan Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-store"></i>
+                    ROMADZ STORE MENYEDIAKAN
+                </h2>
+                <p class="section-subtitle">Berbagai layanan digital dan hosting terbaik untuk kebutuhan Anda</p>
+            </div>
+            
+            <div class="services-category">
+                <h3 class="category-title">
+                    <i class="fas fa-server"></i>
+                    KEBUTUHAN HOSTING
+                </h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h4 class="card-title">Jasa Install Panel Pterodactyl</h4>
+                        <p class="card-desc">Instalasi panel Pterodactyl untuk manajemen server game dan aplikasi Anda</p>
+                        <button class="card-btn" data-service="Jasa Install Panel Pterodactyl">
+                            Beli Layanan
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4 class="card-title">Jasa Install Thema Pterodactyl</h4>
+                        <p class="card-desc">Kustomisasi tema panel Pterodactyl sesuai dengan preferensi Anda</p>
+                        <button class="card-btn" data-service="Jasa Install Thema Pterodactyl">
+                            Beli Layanan
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h4 class="card-title">Jasa Install / Fixed Nodes</h4>
+                        <p class="card-desc">Instalasi atau perbaikan nodes untuk optimasi server Anda</p>
+                        <button class="card-btn" data-service="Jasa Install / Fixed Nodes">
+                            Beli Layanan
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4 class="card-title">Domain Cloudflare 1 Tahun</h4>
+                        <p class="card-desc">Pendaftaran domain dengan proteksi Cloudflare selama 1 tahun</p>
+                        <button class="card-btn" data-service="Domain Cloudflare 1 Tahun">
+                            Beli Layanan
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4 class="card-title">Panel Pterodactyl Private</h4>
+                        <p class="card-desc">Panel Pterodactyl eksklusif untuk penggunaan pribadi Anda</p>
+                        <button class="card-btn" data-service="Panel Pterodactyl Private">
+                            Beli Layanan
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services-category">
+                <h3 class="category-title">
+                    <i class="fas fa-robot"></i>
+                    KEBUTUHAN SCRIPT BOT
+                </h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4 class="card-title">Perbaikan / Tambah Fitur</h4>
+                        <p class="card-desc">Perbaikan bug atau penambahan fitur pada script bot yang Anda miliki</p>
+                        <button class="card-btn" data-service="Perbaikan / Tambah Fitur">
+                            Hubungi Admin
+                            <i class="fas fa-headset"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h4 class="card-title">Rename Script</h4>
+                        <p class="card-desc">Modifikasi nama script bot sesuai dengan keinginan Anda</p>
+                        <button class="card-btn" data-service="Rename Script">
+                            Hubungi Admin
+                            <i class="fas fa-headset"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="services-category">
+                <h3 class="category-title">
+                    <i class="fas fa-th-large"></i>
+                    KEBUTUHAN LAINNYA
+                </h3>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="card-icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
-                        <div class="link-text">
-                            <h3 class="link-title">WhatsApp</h3>
-                            <p class="link-subtitle">Hubungi langsung via WhatsApp</p>
+                        <h4 class="card-title">Nokos WhatsApp Fresh / Save</h4>
+                        <p class="card-desc">Akun WhatsApp fresh atau save untuk berbagai keperluan</p>
+                        <button class="card-btn" data-service="Nokos WhatsApp Fresh / Save">
+                            Beli Layanan
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-crown"></i>
                         </div>
-                        <div class="link-arrow">→</div>
-                    </a>
+                        <h4 class="card-title">Akun Premium</h4>
+                        <p class="card-desc">Netflix, Capcut, Spotify, YouTube Premium dan layanan premium lainnya</p>
+                        <button class="card-btn" data-service="Akun Premium">
+                            Beli Layanan
+                            <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <h4 class="card-title">Jasa Suntik All Sosmed</h4>
+                        <p class="card-desc">Penambahan followers, likes, views untuk semua platform sosial media</p>
+                        <button class="card-btn" data-service="Jasa Suntik All Sosmed">
+                            Hubungi Admin
+                            <i class="fas fa-headset"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4 class="card-title">Lainnya (Tanyakan Admin)</h4>
+                        <p class="card-desc">Layanan lainnya yang mungkin Anda butuhkan. Silakan konsultasi dengan admin</p>
+                        <button class="card-btn" data-service="Lainnya (Tanyakan Admin)">
+                            Tanyakan Admin
+                            <i class="fas fa-comment-alt"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <a href="https://t.me/rmddz" class="link-card" target="_blank" data-link-type="telegram">
-                        <div class="link-icon">
+    <!-- Kontak Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-address-book"></i>
+                    HUBUNGI KAMI
+                </h2>
+                <p class="section-subtitle">Hubungi admin kami melalui berbagai platform yang tersedia</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3 class="contact-title">WhatsApp</h3>
+                    <p class="contact-desc">Hubungi admin melalui WhatsApp untuk konsultasi atau pemesanan</p>
+                    <a href="https://wa.me/6283171889474" target="_blank" class="contact-btn">
+                        Chat Sekarang
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon telegram">
+                        <i class="fab fa-telegram"></i>
+                    </div>
+                    <h3 class="contact-title">Telegram</h3>
+                    <p class="contact-desc">Hubungi admin melalui channel Telegram berikut</p>
+                    <div class="contact-links">
+                        <a href="https://t.me/rmddz" target="_blank" class="contact-link">
                             <i class="fab fa-telegram"></i>
-                        </div>
-                        <div class="link-text">
-                            <h3 class="link-title">Telegram</h3>
-                            <p class="link-subtitle">Kontak Telegram pribadi</p>
-                        </div>
-                        <div class="link-arrow">→</div>
-                    </a>
-
-                    <a href="https://t.me/rmddztrust" class="link-card" target="_blank" data-link-type="testimoni">
-                        <div class="link-icon">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="link-text">
-                            <h3 class="link-title">Testimoni</h3>
-                            <p class="link-subtitle">Lihat testimoni pelanggan</p>
-                        </div>
-                        <div class="link-arrow">→</div>
+                            @rmddz
+                        </a>
+                        <a href="https://t.me/rmddztrust" target="_blank" class="contact-link">
+                            <i class="fab fa-telegram"></i>
+                            @rmddztrust
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon store">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="contact-title">Panel Otomatis</h3>
+                    <p class="contact-desc">Beli layanan secara otomatis melalui website partner kami</p>
+                    <a href="https://sapuracloud.web.id" target="_blank" class="contact-btn">
+                        Kunjungi Store
+                        <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
-            <!-- Section Group Marketplace -->
-            <section class="link-section">
-                <h2 class="section-title">GROUP MARKETPLACE</h2>
-                <div class="links-container">
-                    <a href="https://chat.whatsapp.com/DMlW3e4CdZ71ICRQA2HZ4n" class="link-card" target="_blank" data-link-type="marketplace">
-                        <div class="link-icon">
-                            <i class="fas fa-store"></i>
-                        </div>
-                        <div class="link-text">
-                            <h3 class="link-title">Marketplace 1</h3>
-                            <p class="link-subtitle">Grup WhatsApp Marketplace Utama</p>
-                        </div>
-                        <div class="link-arrow">→</div>
-                    </a>
-
-                    <a href="https://chat.whatsapp.com/JsDqyCZDHnxIJi8ciU0GPF" class="link-card" target="_blank" data-link-type="marketplace">
-                        <div class="link-icon">
-                            <i class="fas fa-store"></i>
-                        </div>
-                        <div class="link-text">
-                            <h3 class="link-title">Marketplace 2</h3>
-                            <p class="link-subtitle">Grup WhatsApp Marketplace Alternatif</p>
-                        </div>
-                        <div class="link-arrow">→</div>
-                    </a>
-
-                    <a href="https://chat.whatsapp.com/CvAQThReFiLFO2IcBH8X7m" class="link-card" target="_blank" data-link-type="marketplace">
-                        <div class="link-icon">
-                            <i class="fas fa-store"></i>
-                        </div>
-                        <div class="link-text">
-                            <h3 class="link-title">Marketplace 3</h3>
-                            <p class="link-subtitle">Grup WhatsApp Marketplace Tambahan</p>
-                        </div>
-                        <div class="link-arrow">→</div>
-                    </a>
-
-                    <a href="https://chat.whatsapp.com/JohNc0ty7RYKuAGPNOuYuU" class="link-card" target="_blank" data-link-type="marketplace">
-                        <div class="link-icon">
-                            <i class="fas fa-store"></i>
-                        </div>
-                        <div class="link-text">
-                            <h3 class="link-title">Marketplace 4</h3>
-                            <p class="link-subtitle">Grup WhatsApp Marketplace Premium</p>
-                        </div>
-                        <div class="link-arrow">→</div>
-                    </a>
-
-                    <a href="https://chat.whatsapp.com/HHQu02C1ZRX4eQFE7rkjpd" class="link-card" target="_blank" data-link-type="marketplace">
-                        <div class="link-icon">
-                            <i class="fas fa-store"></i>
-                        </div>
-                        <div class="link-text">
-                            <h3 class="link-title">Marketplace 5</h3>
-                            <p class="link-subtitle">Grup WhatsApp Marketplace Eksklusif</p>
-                        </div>
-                        <div class="link-arrow">→</div>
-                    </a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="https://files.catbox.moe/5vidyd.jpg" alt="ROMADZ STORE Logo" class="footer-logo-img">
+                    <div class="footer-logo-text">
+                        <h3>ROMADZ STORE</h3>
+                        <p>Digital Service & Hosting</p>
+                    </div>
                 </div>
-            </section>
-
-            <!-- Section Group Informasi -->
-            <section class="link-section">
-                <h2 class="section-title">GROUP INFORMASI</h2>
-                <div class="links-container">
-                    <a href="https://chat.whatsapp.com/EtVz7hjYiE8DJvIMIgfzGP" class="link-card" target="_blank" data-link-type="informasi">
-                        <div class="link-icon">
-                            <i class="fas fa-info-circle"></i>
-                        </div>
-                        <div class="link-text">
-                            <h3 class="link-title">Informasi</h3>
-                            <p class="link-subtitle">Grup informasi dan update terbaru</p>
-                        </div>
-                        <div class="link-arrow">→</div>
-                    </a>
+                
+                <div class="footer-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Kabupaten Rembang, Jawa Tengah, Indonesia</p>
+                    <p><i class="fas fa-calendar-alt"></i> Berdiri sejak 2024 – Sekarang</p>
                 </div>
-            </section>
-        </main>
+                
+                <div class="footer-copyright">
+                    <p>© Romadz Store ID — Hak Cipta Dilindungi</p>
+                    <p class="footer-tagline">Solusi Digital & Hosting Terpercaya</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <p class="footer-text">© 2026 Romadz Store. All rights reserved.</p>
-            <p class="footer-subtext">Professional Digital Solutions</p>
-        </footer>
+    <!-- Modal Konfirmasi -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Konfirmasi Layanan</h3>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Anda akan membeli layanan: <strong id="selectedService"></strong></p>
+                <p>Silakan hubungi admin melalui WhatsApp untuk melanjutkan pemesanan.</p>
+                <div class="modal-actions">
+                    <a href="https://wa.me/6283171889474" target="_blank" class="modal-btn whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i>
+                        Hubungi via WhatsApp
+                    </a>
+                    <button class="modal-btn cancel-btn" id="cancelBtn">Batal</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
