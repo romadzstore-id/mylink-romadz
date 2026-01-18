@@ -3,74 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROMADZ STORE | Solusi Digital & Hosting</title>
+    <title>ROMADZ STORE - Solusi Digital & Hosting Terpercaya</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/5vidyd.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
+    <!-- Navigasi -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <div class="logo-area">
-                <img src="https://files.catbox.moe/5vidyd.jpg" alt="Logo ROMADZ STORE" class="logo-img">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="https://files.catbox.moe/5vidyd.jpg" alt="ROMADZ STORE Logo" class="logo-img">
                 <span class="logo-text">ROMADZ STORE</span>
+            </a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="product.html" class="nav-link">Layanan</a>
+                <a href="contact.html" class="nav-link">Kontak</a>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Beranda</a></li>
-                <li><a href="product.html">Layanan</a></li>
-                <li><a href="contact.html">Kontak</a></li>
-            </ul>
-            <div class="menu-toggle">
+            <button class="nav-toggle" id="navToggle">
                 <i class="fas fa-bars"></i>
-            </div>
+            </button>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="container hero-content animate-fade-slide">
-            <h1 class="main-title">ROMADZ STORE</h1>
-            <p class="subtitle">Solusi Digital & Hosting Terpercaya</p>
-            <div class="bio-info">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content fade-in">
+            <h1 class="hero-title slide-in-left">ROMADZ STORE</h1>
+            <h2 class="hero-subtitle slide-in-right">Solusi Digital & Hosting Terpercaya</h2>
+            <div class="hero-bio fade-in-delay">
                 <p><i class="fas fa-calendar-alt"></i> Berdiri sejak 2024 – Sekarang</p>
                 <p><i class="fas fa-map-marker-alt"></i> Kabupaten Rembang, Jawa Tengah, Indonesia</p>
             </div>
-            <div class="hero-btns">
+            <div class="hero-buttons fade-in-delay-2">
                 <a href="product.html" class="btn btn-primary">Lihat Layanan</a>
-                <a href="contact.html" class="btn btn-outline">Kontak Kami</a>
+                <a href="contact.html" class="btn btn-secondary">Kontak Kami</a>
             </div>
         </div>
-    </header>
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
 
+    <!-- Why Choose Us -->
     <section class="features">
         <div class="container">
             <h2 class="section-title reveal">Kenapa Memilih Kami?</h2>
-            <div class="feature-grid">
+            <div class="features-grid">
                 <div class="feature-card reveal">
-                    <i class="fas fa-shield-alt"></i>
-                    <h3>Aman & Terpercaya</h3>
-                    <p>Keamanan data dan transaksi pelanggan adalah prioritas utama kami.</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Aman & Terpercaya</h3>
+                    <p class="feature-desc">Keamanan data dan transaksi Anda adalah prioritas utama kami dengan sistem terenkripsi.</p>
                 </div>
                 <div class="feature-card reveal">
-                    <i class="fas fa-bolt"></i>
-                    <h3>Admin Fast Response</h3>
-                    <p>Layanan bantuan siap sedia merespon kebutuhan Anda dengan cepat.</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 class="feature-title">Admin Fast Response</h3>
+                    <p class="feature-desc">Tim admin siap membantu Anda 24/7 dengan respon cepat dan solusi tepat.</p>
                 </div>
                 <div class="feature-card reveal">
-                    <i class="fas fa-tags"></i>
-                    <h3>Harga Terjangkau</h3>
-                    <p>Kualitas premium dengan harga yang sangat kompetitif di pasaran.</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3 class="feature-title">Harga Terjangkau</h3>
+                    <p class="feature-desc">Kualitas premium dengan harga yang kompetitif dan transparan tanpa biaya tersembunyi.</p>
                 </div>
                 <div class="feature-card reveal">
-                    <i class="fas fa-users"></i>
-                    <h3>200++ Testimoni</h3>
-                    <p>Telah dipercaya oleh ratusan pelanggan dari berbagai kalangan.</p>
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="feature-title">200++ Testimoni</h3>
+                    <p class="feature-desc">Dibuktikan oleh ratusan pelanggan yang puas dengan layanan kami.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; Romadz Store ID — Hak Cipta Dilindungi</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© Romadz Store ID — Hak Cipta Dilindungi</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
